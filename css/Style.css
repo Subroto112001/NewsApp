@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+/* Golbal Css */
+.obj-width{
+    max-width: 1200px;
+    margin: auto;
+}
+nav{
+    background-color: #2d4c50;
+    box-shadow: 0 7px 10px rgb(0, 0, 0,0.3) ;
+}
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 0;
+}
+.Logo{
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 2.2rem;
+
+}
+#SearchInput{
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #333;
+}
+.SearchBtn{
+    padding: 10px 20px;
+    background-color:#138065 ;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius:5px ;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+}
+#BlogContainer{
+    padding: 3rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.blogCard{
+    width: 280px;
+    border: 1px solid #2d4c50;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 1rem;
+    margin: 10px;
+}
+.blogCardImage:hover{
+box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.blogCardImage{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-bottom: 1rem;
+}
+.blogCard__Header{
+    color: #141414;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.blogCardPara{
+    font-size: 1.2rem;
+    padding-top: .7rem;
+}
