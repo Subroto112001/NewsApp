@@ -5,7 +5,7 @@ const SearchBtn = document.querySelector(".SearchBtn");
 
 async function fetchRandomNews() {
   try {
-    const apiurl = `https://newsapi.org/v2/top-headlines?country=us&pageSize=10&apikey=${ApiKey}`;
+    const apiurl = `https://newsapi.org/v2/top-headlines?country=us&pageSize=14&apikey=${ApiKey}`;
     const response = await fetch(apiurl);
     const data = await response.json();
 
@@ -36,7 +36,7 @@ SearchBtn.addEventListener("click", async () => {
 
 async function fetchSearch(searchvalue) {
   try {
-    const apiurl = `https://newsapi.org/v2/everything?q=${searchvalue}&pageSize=10&apikey=${ApiKey}`;
+    const apiurl = `https://newsapi.org/v2/everything?q=${searchvalue}&pageSize=14&apikey=${ApiKey}`;
     const response = await fetch(apiurl);
     const data = await response.json();
 
